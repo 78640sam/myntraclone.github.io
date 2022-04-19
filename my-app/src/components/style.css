@@ -55,6 +55,15 @@
     margin:60px 20px;
     
 }
+.Product-container-3{
+    display :grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto  ;
+
+}
+.product-img-3{
+    height:275px;
+    
+}
 .footer-container{
     display:flex;
     justify-content:center;
