@@ -15,8 +15,18 @@
 
 }
 .header-input{
-    width: 400px;
+    width: 500px;
     height:40px;
     margin-left: 80px;
     margin-top:12px ;
+    border-radius: 4px;
+    background-color: rgb(243, 243, 243);
+    border:none;
+}
+.Product-container-1{
+    display:flex;
+}
+.product-img-1{
+    height:350px;
+    margin-left: 9px;
 }

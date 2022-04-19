@@ -1,4 +1,5 @@
 import "./style.css";
+//import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 function Header() {
 
   return (
@@ -15,9 +16,11 @@ function Header() {
          <h3>STUDIO</h3>
      </div>
      <div>
-         <input className="header-input" type="search"/>
+         <input className="header-input" type="search" placeholder="Search for products and Brand "/>
      </div>
-     <div></div>
+     <div>
+         {/* <FavoriteBorderIcon/> */}
+     </div>
   
     </div>
   );
