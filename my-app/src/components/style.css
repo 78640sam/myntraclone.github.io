@@ -1,0 +1,22 @@
+.Header-container{
+    display:flex;
+}
+.header-name{
+    display:flex;
+ 
+}
+.header-img{
+    width: 90px;
+    height:90px;
+    margin-left: 20px;
+}
+.header-name > h3{
+    margin-left: 40px;
+
+}
+.header-input{
+    width: 400px;
+    height:40px;
+    margin-left: 80px;
+    margin-top:12px ;
+}
