@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 function Headerslider() {
   
   return (
-    <div className="">
+    <div className="Slider-image">
     
       <Carousel>
           <div>
