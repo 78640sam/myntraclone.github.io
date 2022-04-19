@@ -55,3 +55,29 @@
     margin:60px 20px;
     
 }
+.footer-container{
+    display:flex;
+    justify-content:center;
+    gap:70px;
+}
+.footer-list-1{
+    list-style-type:none;
+    line-height: 27PX;
+    margin-left: -35PX;
+}
+.footer-icon-playstore{
+    width:300px;
+}
+.footer-icon-1{
+    width:70px;
+    margin-right: 10px;
+}
+.footer-last-list{
+    margin-top: 50px;
+    display: flex;
+    
+}
+.footer-span{
+    font-weight: bold;
+  
+}
