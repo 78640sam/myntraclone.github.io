@@ -106,7 +106,7 @@ function Product2() {
   "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/7f814546-b705-4d9b-9ab5-1ddfeca786391645602467001-Flip-Flops.jpg",
   "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/12c3b4aa-8160-442f-b93e-e896eafb1b0a1645602467160-T-Shirts-_-Shorts_Kids.jpg",
   "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/67783047-7fcc-4530-9368-9be75a713e411645602466995-Dresses.jpg",
-  "",
+  
 
 
 
@@ -114,7 +114,7 @@ function Product2() {
 
 return (
     <>
-    <h1 className="product-deal-heading-2">BEST OF MYNTRA EXCLUSIVE BRANDS
+    <h1 className="product-deal-heading-2">CATEGORIES TO BAG
 </h1>
   <div className="Product-container-3">
       
@@ -125,7 +125,7 @@ return (
          <img
            className="product-img-3"
            src={item}
-           alt=""
+           alt="Imges"
            
            
          />

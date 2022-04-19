@@ -57,17 +57,20 @@
 }
 .Product-container-3{
     display :grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto  ;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    
 
 }
 .product-img-3{
-    height:275px;
+    height:250px;
+   width:212px;
     
 }
 .footer-container{
     display:flex;
     justify-content:center;
     gap:70px;
+    margin-top: 60px;
 }
 .footer-list-1{
     list-style-type:none;
