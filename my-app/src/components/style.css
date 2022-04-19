@@ -39,6 +39,7 @@
 .product-deal-heading{
     color:gray;
     font-size: 40px;
+    margin-left: 10px;
     
 }
 .Product-container-2{
@@ -51,6 +52,6 @@
 .product-deal-heading-2{
     color:gray;
     font-size: 30px;
-    margin: 60px;
+    margin:60px 20px;
     
 }
