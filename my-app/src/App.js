@@ -34,12 +34,13 @@ function App() {
       <Route path="/payment" element={Payment}></Route>
       <Route path="/login" element={Login}></Route>
       <Route path="/signup" element={Signup}></Route>
+     
     
     </Routes>
     </BrowserRouter>
  
 
-
+    <Data/>
 
 
     
