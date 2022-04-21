@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { storeItem } from "../Redux/action";
 
+//import { useNavigate } from "react-router-dom"
+
 
 function Data() {
 
@@ -23,6 +25,7 @@ function Data() {
   console.log(data)
   const addtoCart = (data) => {
     fetch("http://localhost:3004/item", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
+    
   }
 
   return (
@@ -35,7 +38,7 @@ function Data() {
                   <h1>{detail.category}</h1>
                   <p>{detail.price}</p>
 
-        <button onClick={() => { addtoCart(detail) }}>ADD</button>
+        <button onClick={() => { addtoCart(detail)  }}>ADD</button>
 
       </div> :
       
@@ -49,8 +52,9 @@ function Data() {
                 setBool(true)
 
               }}>
-                
+               
                 <div>
+               
                   <img src={item.image} alt="img" className="product-image" />
                   <p>{item.title}</p>
                   <h1>{item.category}</h1>
