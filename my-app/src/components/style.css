@@ -102,3 +102,11 @@
     display: grid;
    grid-template-columns: auto auto auto;
 }
+.cont{
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+}
+img{
+    width:240px;
+    height:340px
+}

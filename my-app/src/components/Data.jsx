@@ -26,15 +26,22 @@ function Data() {
   }
 
   return (
-    <>
+    <div>
       {detailBool ? <div>
+       
         <h1>{detail.title}</h1>
+        <img src={detail.image} alt="img" className="product-image" />
+                  <p>{detail.title}</p>
+                  <h1>{detail.category}</h1>
+                  <p>{detail.price}</p>
+
         <button onClick={() => { addtoCart(detail) }}>ADD</button>
 
       </div> :
-        <>{
+      
+        <div className="cont">{
           data.map((item) => {
-            return (<div >
+            return (
 
               <div className="main-container-1-1" onClick={() => {
                 setDetail(item);
@@ -42,6 +49,7 @@ function Data() {
                 setBool(true)
 
               }}>
+                
                 <div>
                   <img src={item.image} alt="img" className="product-image" />
                   <p>{item.title}</p>
@@ -49,16 +57,17 @@ function Data() {
                   <p>{item.price}</p>
 
                 </div>
+                </div>
 
-              </div>
+              
 
-            </div>
+            
 
             )
           })
-        }</>}
+        }</div>}
 
-    </>
+    </div>
   );
 }
 export default Data;
