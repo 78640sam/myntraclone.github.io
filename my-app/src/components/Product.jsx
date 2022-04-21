@@ -24,12 +24,8 @@ function Product() {
            <img
              className="product-img-1"
              src={item}
-             alt=""
-             
-             
+             alt="" 
            />
-         
-         
            )
          })
        }

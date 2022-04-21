@@ -1,6 +1,16 @@
-const storeItem=(payload)=> ({
-    type : "STORE_ITEM",
-    payload : payload
+import { ActionTypes } from "./actionTypes"
+const storeItem=(items)=> ({
+    type : ActionTypes.STORE_ITEM,
+    payload : items,
 })
 
-export{storeItem}
+const selectItem=(items)=> ({
+    type : ActionTypes.SELECT_ITEM,
+    payload : items,
+})
+
+
+
+
+
+export{storeItem,selectItem}
