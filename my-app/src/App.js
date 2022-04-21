@@ -1,27 +1,26 @@
 import './App.css';
-// import Headerslider from "./components/Headerslider";
-// import Header from './components/Header';
-// import {Product, Product1,Product2} from './components/Product';
- //import Footer from './components/Footer';
+import Headerslider from "./components/Headerslider";
+import Header from './components/Header';
+import {Product, Product1,Product2} from './components/Product';
+ import Footer from './components/Footer';
 import {BrowserRouter,Route,Routes} from "react-router-dom";
 import Data from './components/Data';
 import AddtoCart from './components/Addtocart';
 import Payment from './components/Payment';
-import Header from './components/Header';
-import Headerslider from './components/Headerslider';
+import Login from './components/Login';
+import Signup from './components/Signup';
 
-// import { Link } from "react-router-dom";
-// import ProductComponents from "./components/ProductComponents"
+
 function App() {
   return (
     <div className="App">
      
-     {/* <Header/>
+     <Header/>
     <Headerslider/>
     <Product/>
     <Product1/>
     <Product2/>
-    <Footer/> */}
+    <Footer/>
     <BrowserRouter>
    
     
@@ -33,6 +32,8 @@ function App() {
     
       <Route path="/addtocart" element={AddtoCart}></Route>
       <Route path="/payment" element={Payment}></Route>
+      <Route path="/login" element={Login}></Route>
+      <Route path="/signup" element={Signup}></Route>
     
     </Routes>
     </BrowserRouter>
