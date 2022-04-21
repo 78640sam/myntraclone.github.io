@@ -8,7 +8,13 @@ function Payment() {
       <>
         <Header/>
     <div className="Header-container">
-     
+    <div>
+ 
+      <input type="text" placeholder="Enter Your Email"/>
+      <input type="text" placeholder="Enter Your Password"/>
+      <button> Login </button>
+
+  </div>
   
 
 
