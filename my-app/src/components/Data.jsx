@@ -2,6 +2,8 @@ import "./style.css"
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { storeItem } from "../Redux/action";
+import Header from "./Header";
+import Footer from "./Footer"
 
 //import { useNavigate } from "react-router-dom"
 
@@ -42,7 +44,12 @@ function Data() {
         <button onClick={() => { addtoCart(detail)  }}>ADD</button>
 
       </div> :
-      
+      <>
+      <Header/>
+       <div className="main">
+        <div className="left">
+
+        </div>
         <div className="cont">{
           data.map((item) => {
             return (
@@ -57,8 +64,8 @@ function Data() {
                 <div>
                
                   <img src={item.image} alt="img" className="product-image" />
-                  <p>{item.title}</p>
-                  <h1>{item.category}</h1>
+                  <p className="para">{item.title}</p>
+                  <h2>{item.category}</h2>
                   <p>{item.price}</p>
 
                 </div>
@@ -70,9 +77,11 @@ function Data() {
 
             )
           })
-        }</div>}
+        }</div></div>
+        <Footer/></>}
 
     </div>
+    
   );
 }
 export default Data;

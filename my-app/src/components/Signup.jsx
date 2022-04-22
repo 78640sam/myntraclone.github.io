@@ -4,6 +4,8 @@ import "./style.css";
  import Footer from './Footer';
 //  import axios from 'axios';
  import { useState } from "react";
+ import Button from '@mui/material/Button';
+ import TextField from '@mui/material/TextField';
 
 
 function Signup() {
@@ -30,20 +32,20 @@ function Signup() {
     <div className="Signup-container">
      
   <div>
-  <input type="text" placeholder="Enter Your Name"  onChange={(e) => {
+  <TextField id="outlined-basic" label="Outlined" variant="outlined"  onChange={(e) => {
             setName(e.target.value);
            
           }}/><br/> <br/> <br/>
-      <input type="text" placeholder="Enter Your Email" onChange={(e) => {
+      <TextField id="outlined-basic" label="Outlined" variant="outlined" onChange={(e) => {
             setEmail(e.target.value);
           
           }}/> <br/> <br/> <br/>
-      <input type="text" placeholder="Enter Your Password"onChange={(e) => {
+      <TextField id="outlined-basic" label="Outlined" variant="outlined" onChange={(e) => {
             setPass(e.target.value);
            
           }}/>
           <br/> <br/> <br/>
-      <button onClick={registerUser}> Signup </button>
+      <Button  variant="contained" onClick={registerUser}> Signup </Button>
 
   </div>
 
