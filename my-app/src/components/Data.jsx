@@ -46,7 +46,8 @@ function Data() {
       </div> :
       <>
       <Header/>
-       <div className="main">
+      <hr/>
+       <div className="Data-main-cointer">
         <div className="left">
         <div className="product-details"><span class="header-title"><b>FILTERS</b></span><span class="header-clearAllBtn">CLEAR ALL</span></div>
         <div className="product-radio">
@@ -84,6 +85,80 @@ function Data() {
           
         </form>
         </div>
+        <br/>
+        <div className="product-details"><span class="header-title"><b>CATEGORIES</b></span></div>
+        <div className="product-radio">
+        <form >
+          
+         
+          <label> 
+            <input
+              type="checkbox"
+              value="male"
+            
+            />Jeans(159)
+          </label><br/>
+          <label> 
+            <input
+              type="checkbox"
+              value="female"
+            
+            />Tshirts(62)
+          </label><br/>
+          <label> 
+            <input
+              type="checkbox"
+              value="male"
+            
+            />Dresses(11)
+          </label><br/>
+          <label> 
+            <input
+              type="checkbox"
+              value="male"
+            
+            />Tops(45)
+          </label><br/>
+          
+        </form>
+        </div>
+        <br/>
+        <div className="product-details"><span class="header-title"><b>PRICE</b></span></div>
+        <div className="product-radio">
+        <form >
+          
+         
+          <label> 
+            <input
+              type="checkbox"
+              value="male"
+            
+            />Rs. 449 to Rs. 1987(245)
+          </label><br/>
+          <label> 
+            <input
+              type="checkbox"
+              value="female"
+            
+            />Rs. 1987 to Rs. 3525(93)
+          </label><br/>
+          <label> 
+            <input
+              type="checkbox"
+              value="male"
+            
+            />Rs. 3525 to Rs. 5063(2)
+          </label><br/>
+          <label> 
+            <input
+              type="checkbox"
+              value="male"
+            
+            /> Rs. 5063(2)+
+          </label><br/>
+          
+        </form>
+        </div>
         </div>
         <div className="cont">{
           data.map((item) => {
@@ -114,7 +189,7 @@ function Data() {
 
             )
           })
-        }</div></div>
+        }</div></div><hr/>
         <Footer/></>}
 
     </div>
