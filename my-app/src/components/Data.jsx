@@ -4,7 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { storeItem } from "../Redux/action";
 import Header from "./Header";
 import Footer from "./Footer"
-
+import LocalMallSharpIcon from '@mui/icons-material/LocalMallSharp';
+import { Navigate } from "react-router-dom";
 //import { useNavigate } from "react-router-dom"
 
 
@@ -13,7 +14,9 @@ function Data() {
 
 
   const [detailBool, setBool] = useState(false);
+  const [navigate, setNavigate] = useState(false);
   const [detail, setDetail] = useState({});
+  const [data, setData] = useState([]);
   const dispatch = useDispatch()
   useEffect(() => {
 
@@ -23,25 +26,41 @@ function Data() {
       .catch((error) => console.log(error))
 
   }, [dispatch]);
-
-  const data = useSelector((state) => state.item)
+  const item = useSelector((state) => state.item);
+  const search = useSelector((state) => state.searchString);
+  useEffect(()=>{
+    setData(item)
+  },[item])
+  useEffect(()=>{
+    if(search.length>=3){
+      setData(item.filter(el=>el.title.includes(search)))
+    }
+    
+  },[search])
   console.log(data)
   const addtoCart = (data) => {
     fetch("http://localhost:3004/item", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
     
   }
+  if(navigate){
+    return <Navigate to="/addtocart"></Navigate>
+  }
 
   return (
     <div>
-      {detailBool ? <><Header/><hr/><div>
+      {detailBool ? <><Header/><hr/>
+      <div className="individual-page-item">
+       <div className="individual-page-item-left">
        
-        <h1>{detail.title}</h1>
-        <img src={detail.image} alt="img" className="product-image" />
+        <img src={detail.image} alt="img" className="product-image-1" />
+        </div><div className="individual-page-item-right">
                   <p>{detail.title}</p>
                   <h1>{detail.category}</h1>
-                  <p>{detail.price}</p>
+                  <h3>&#8360;.{detail.price}</h3>
 
-        <button onClick={() => { addtoCart(detail)  }}>ADD</button>
+       <button onClick={() => { addtoCart(detail);setNavigate(true)  }} className="btn"><LocalMallSharpIcon/>  ADD TO BAG</button>
+        
+        </div>
 
       </div><hr/><Footer/> </>:
       <>

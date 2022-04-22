@@ -169,6 +169,15 @@
     width:400px;
     height:80px;
 }
+.btn{
+    background-color: rgb(255,62,109);
+    width:400px;
+    height:80px;
+    border-radius: 10px;
+    border-style: none;
+    color:white;
+    font-size: large;
+}
 .login-main-1{
     background-color: white;
     padding:100px;
@@ -207,4 +216,25 @@
     padding:15px;
     line-height: 30px;
     
+}
+.individual-page-item{
+    display: flex;
+    /* justify-content: center; */
+    margin:auto;
+    width:70%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+.individual-page-item-left{
+    margin-right: 100px;
+}
+.product-image-1{
+    width:450px;
+    height:450px;
+}
+.product-image-1:hover{
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3); 
+    transform: scale(1.3); 
 }

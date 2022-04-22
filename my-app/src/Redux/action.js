@@ -10,7 +10,10 @@ const selectItem=(items)=> ({
 })
 
 
+const searchItem=(items)=> ({
+    type : ActionTypes.SEARCH_ITEM,
+    payload : items,
+})
 
 
-
-export{storeItem,selectItem}
+export{storeItem,selectItem,searchItem}

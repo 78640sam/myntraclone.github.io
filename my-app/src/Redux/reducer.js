@@ -1,7 +1,8 @@
 import {ActionTypes} from './actionTypes';
 
 const initState ={
-    item : []
+    item : [],
+    searchString:""
 }
 
 const reducer = (state=initState,action) =>{
@@ -10,7 +11,8 @@ const reducer = (state=initState,action) =>{
     switch(action.type){
         case ActionTypes.STORE_ITEM :
             return{...state, item: action.payload }
-
+        case ActionTypes.SEARCH_ITEM :
+            return {...state,searchString:action.payload}
             default :
             return state;
     }
