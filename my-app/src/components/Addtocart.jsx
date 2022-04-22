@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import './style.css';
 import React from "react";
+import Header from "./Header";
 
 
 
@@ -26,6 +27,7 @@ function AddtoCart() {
 
     return (
         <>
+        <Header/>
 
             {
                 data.map((item) => {

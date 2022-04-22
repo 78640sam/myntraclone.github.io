@@ -3,38 +3,38 @@ import "./style.css";
  import Header from './Header';
  import Footer from './Footer';
  import { useState } from "react";
-function Login() {
+function LoginData() {
   const [email, setEmail] = useState();
   const [pass, setPass] = useState();
 
   const login = (data) => {
     fetch("http://localhost:3004/user").then(response => response.json())
     .then(data => console.log(data));
-    let mailCheck = false;
+    let Checkmail = false;
     
-    let passCheck = false;
+    let Cheakpass = false;
 
     data.map((e) => {
       if (e.email === email && e.password === pass) {
-        mailCheck = true;
-        passCheck = true;
+        Checkmail = true;
+        Cheakpass = true;
       }
       else if (e.email === email && e.password !== pass) {
-        mailCheck = true;
-        passCheck = false;
+        Checkmail = true;
+        Cheakpass = false;
       } else {
-        mailCheck = false;
-        passCheck = false;
+        Checkmail = false;
+        Cheakpass = false;
       }
     });
     
 
-    if (mailCheck === true && passCheck === true) {
+    if (Checkmail === true && Cheakpass === true) {
       
       alert("Login Success");
     
      
-    } else if (mailCheck === true && passCheck === false) {
+    } else if (Checkmail === true && Cheakpass === false) {
       alert("Wrong Password");
     } else {
       alert("User does not exist");
@@ -72,4 +72,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default LoginData;
