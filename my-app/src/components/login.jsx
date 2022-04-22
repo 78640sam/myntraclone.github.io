@@ -10,35 +10,9 @@ function LoginData() {
   const login = (data) => {
     fetch("http://localhost:3004/user").then(response => response.json())
     .then(data => console.log(data));
-    let Checkmail = false;
-    
-    let Cheakpass = false;
+  
 
-    data.map((e) => {
-      if (e.email === email && e.password === pass) {
-        Checkmail = true;
-        Cheakpass = true;
-      }
-      else if (e.email === email && e.password !== pass) {
-        Checkmail = true;
-        Cheakpass = false;
-      } else {
-        Checkmail = false;
-        Cheakpass = false;
-      }
-    });
     
-
-    if (Checkmail === true && Cheakpass === true) {
-      
-      alert("Login Success");
-    
-     
-    } else if (Checkmail === true && Cheakpass === false) {
-      alert("Wrong Password");
-    } else {
-      alert("User does not exist");
-    }
    
   
   }
