@@ -33,7 +33,7 @@ function Data() {
 
   return (
     <div>
-      {detailBool ? <><Header/><div>
+      {detailBool ? <><Header/><hr/><div>
        
         <h1>{detail.title}</h1>
         <img src={detail.image} alt="img" className="product-image" />
@@ -43,8 +43,9 @@ function Data() {
 
         <button onClick={() => { addtoCart(detail)  }}>ADD</button>
 
-      </div><Footer/> </>:
+      </div><hr/><Footer/> </>:
       <>
+      
       <Header/>
       <hr/>
        <div className="Data-main-cointer">
