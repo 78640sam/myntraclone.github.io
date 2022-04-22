@@ -4,6 +4,8 @@ import "./style.css";
  import Footer from './Footer';
 function Payment() {
 
+ 
+
   return (
       <>
         <Header/>

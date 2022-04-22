@@ -1,5 +1,24 @@
 {
-  "user": [],
+  "user": [
+    {
+      "email": "hgg",
+      "name": "avbb",
+      "password": "ghc",
+      "id": 1
+    },
+    {
+      "email": "hgg",
+      "name": "avbb",
+      "password": "ghc",
+      "id": 2
+    },
+    {
+      "email": "bitti",
+      "name": "bitti",
+      "password": "bitti",
+      "id": 3
+    }
+  ],
   "item": [
     {
       "id": 1,

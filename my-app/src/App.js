@@ -40,9 +40,10 @@ function App() {
     </BrowserRouter>
  
 
-    <Data/>
+    {/* <Data/> */}
+<Signup/>
 
-
+<Login/>
     
   
 
