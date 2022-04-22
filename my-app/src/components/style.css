@@ -112,9 +112,23 @@
   
 }
 .product-image{
-    width:300px;
-    height:300px;
+    width:280px;
+    height:280px;
   
+}
+.product-details{
+    position: relative;
+    border-right: none!important;
+    padding-top: 0;
+}
+.header-clearAllBtn {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-weight: 500;
+    color: #ff3f6c;
+    font-size: 13px;
+    cursor: pointer;
 }
 .main-container-1-1{
     display: grid;
@@ -126,8 +140,13 @@
     gap:10px;
 
 }
+
 .para{
     flex-wrap: wrap;
+    margin-top: -15px;
+}
+.heading{
+    margin-top: -10px;  
 }
 
 .Signup-container{
@@ -166,8 +185,24 @@
 }
 .main{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .left{
     width:40%;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+.vertical-filters-filters {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    border-bottom: 1px solid #e9e9ed;
+    position: relative;
+    border-right: 1px solid #edebef;
+}
+.product-radio{
+    border:1px solid rgb(211, 208, 208);
+    margin-top: 30px;
+    padding:10px;
+    
 }

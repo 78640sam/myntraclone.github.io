@@ -48,7 +48,42 @@ function Data() {
       <Header/>
        <div className="main">
         <div className="left">
-
+        <div className="product-details"><span class="header-title"><b>FILTERS</b></span><span class="header-clearAllBtn">CLEAR ALL</span></div>
+        <div className="product-radio">
+        <form >
+          
+         
+          <label> 
+            <input
+              type="radio"
+              value="male"
+            
+            /><b>Men</b>
+          </label><br/>
+          <label> 
+            <input
+              type="radio"
+              value="female"
+            
+            /><b>women</b>
+          </label><br/>
+          <label> 
+            <input
+              type="radio"
+              value="male"
+            
+            /><b>Boys</b>
+          </label><br/>
+          <label> 
+            <input
+              type="radio"
+              value="male"
+            
+            /><b>Girls</b>
+          </label><br/>
+          
+        </form>
+        </div>
         </div>
         <div className="cont">{
           data.map((item) => {
@@ -63,10 +98,12 @@ function Data() {
                
                 <div>
                
-                  <img src={item.image} alt="img" className="product-image" />
-                  <p className="para">{item.title}</p>
+                  <img src={item.image} alt="img" className="product-image"/>
                   <h2>{item.category}</h2>
-                  <p>{item.price}</p>
+                  <p className="para">{item.title}</p>
+                 
+                  
+                  <h3 className="heading">&#8360;. {item.price}</h3>
 
                 </div>
                 </div>
