@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import './style.css';
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 
 
 
@@ -33,10 +34,10 @@ function AddtoCart() {
                 data.map((item) => {
                     return (<div key={item.id}>
 
-                        <div className="main-container">
+                        <div className="main-container-addtocart">
 
                             <h1>{item.title}</h1>
-                            <img src={item.image} alt="img" className="product-image" />
+                            <img src={item.image} alt="img" className="product-image-addtocart" />
                   <p>{item.title}</p>
                   <h1>{item.category}</h1>
                   <p>{item.price}</p>
@@ -55,6 +56,7 @@ function AddtoCart() {
                 })
 
             }
+            <Footer/>
         </>
     )
 }
