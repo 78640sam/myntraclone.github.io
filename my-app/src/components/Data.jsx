@@ -31,12 +31,12 @@ function Data() {
   useEffect(()=>{
     setData(item)
   },[item])
-  useEffect((item)=>{
+  useEffect(()=>{
     if(search.length>=3){
       setData(item.filter(el=>el.title.includes(search)))
     }
     
-  },[search])
+  },[search,item])
   console.log(data)
   const addtoCart = (data) => {
     fetch("http://localhost:3004/item", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
