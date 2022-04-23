@@ -3,6 +3,8 @@ import "./style.css";
 import Header from './Header';
 import Footer from './Footer';
 import { useState } from "react";
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 import {Navigate} from "react-router-dom"
  function LoginData() {
@@ -34,20 +36,22 @@ import {Navigate} from "react-router-dom"
   return (
     <>
       <Header />
+      <hr/>
       <div className="container-login">
+      
         <div className="login-main-1">
-
-          <input className="login-input" placeholder="Enter Email" type="text" onChange={(el) => {
+  <h1 className="span-tag">Login</h1>
+          <TextField id="outlined-basic"className="input-ui"   label="Email" variant="outlined"  onChange={(el) => {
             setEmail(el.target.value);
 
           }} /> <br /> <br /> <br />
-          <input className="login-input" placeholder="Enter password" type="password" onChange={(el) => {
+          <TextField id="outlined-basic" className="input-ui"   label="Password" variant="outlined"  onChange={(el) => {
             setPass(el.target.value);
 
           }} />
           <br /> <br /> <br />
-          <button  className="login-btn" onClick={login}> Signup </button>
-
+          <Button  variant="contained"  className="login-btn-1" onClick={login}> Signup </Button>
+       <br/> <br/> <span>Go to</span> <a className="link" href="/Signup"> <span className="span-tag"> Signup</span> </a>
         </div>
 
 
@@ -55,6 +59,7 @@ import {Navigate} from "react-router-dom"
 
 
       </div>
+      <hr/>
       <Footer />
     </>
   );

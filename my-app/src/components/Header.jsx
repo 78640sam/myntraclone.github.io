@@ -36,7 +36,7 @@ function Header() {
 
       <a href="/login" className="link"> <PersonIcon fontSize="large" /></a>
         <FavoriteBorderSharpIcon fontSize="large" />
-        <a href="/products" className="link">  <LocalMallSharpIcon fontSize="large" /></a>
+        <a href="/addtocart" className="link">  <LocalMallSharpIcon fontSize="large" /></a>
       </div>
 
     </div>

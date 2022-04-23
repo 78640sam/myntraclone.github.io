@@ -29,23 +29,26 @@ function Signup() {
   return (
       <>
         <Header/>
+        <hr/>
     <div className="Signup-container">
-     
+     <h1 className="span-tag">Sign up</h1>
   <div>
-  <TextField id="outlined-basic" label="Outlined" variant="outlined"  onChange={(e) => {
+  <TextField id="outlined-basic" className="input-ui" label="Name" variant="outlined"  onChange={(e) => {
             setName(e.target.value);
            
           }}/><br/> <br/> <br/>
-      <TextField id="outlined-basic" label="Outlined" variant="outlined" onChange={(e) => {
+      <TextField id="outlined-basic" label="Email" className="input-ui"   variant="outlined" onChange={(e) => {
             setEmail(e.target.value);
           
           }}/> <br/> <br/> <br/>
-      <TextField id="outlined-basic" label="Outlined" variant="outlined" onChange={(e) => {
+      <TextField id="outlined-basic" label="PassWord" className="input-ui"   variant="outlined" onChange={(e) => {
             setPass(e.target.value);
            
           }}/>
           <br/> <br/> <br/>
-      <Button  variant="contained" onClick={registerUser}> Signup </Button>
+      <Button  variant="contained" className="login-btn-1" onClick={registerUser}> Signup </Button>
+      <br/> <br/> <span>Go to </span> <a className="link"  href="/login">  
+      <span className="span-tag">login</span></a>
 
   </div>
 
@@ -53,6 +56,7 @@ function Signup() {
 
 
     </div>
+    <hr/>
     <Footer/>
     </>
   );

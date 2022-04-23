@@ -56,7 +56,9 @@ function Data() {
         </div><div className="individual-page-item-right">
                   <p>{detail.title}</p>
                   <h1>{detail.category}</h1>
-                  <h3>&#8360;.{detail.price}</h3>
+                  <p>{detail.description}</p>
+                  <h4>Ratting :5/{detail.rating.rate}</h4>
+                  <h3>&#8360;.{(detail.price)*100}</h3>
 
        <button onClick={() => { addtoCart(detail);setNavigate(true)  }} className="btn"><LocalMallSharpIcon/>  ADD TO BAG</button>
         
@@ -69,7 +71,7 @@ function Data() {
       <hr/>
        <div className="Data-main-cointer">
         <div className="left">
-        <div className="product-details"><span class="header-title"><b>FILTERS</b></span><span class="header-clearAllBtn">CLEAR ALL</span></div>
+        <div className="product-details"><span className="header-title"><b>FILTERS</b></span><span className="header-clearAllBtn">CLEAR ALL</span></div>
         <div className="product-radio">
         <form >
           
@@ -106,7 +108,7 @@ function Data() {
         </form>
         </div>
         <br/>
-        <div className="product-details"><span class="header-title"><b>CATEGORIES</b></span></div>
+        <div className="product-details"><span className="header-title"><b>CATEGORIES</b></span></div>
         <div className="product-radio">
         <form >
           
@@ -143,7 +145,7 @@ function Data() {
         </form>
         </div>
         <br/>
-        <div className="product-details"><span class="header-title"><b>PRICE</b></span></div>
+        <div className="product-details"><span className="header-title"><b>PRICE</b></span></div>
         <div className="product-radio">
         <form >
           
@@ -198,7 +200,7 @@ function Data() {
                   <p className="para">{item.title}</p>
                  
                   
-                  <h3 className="heading">&#8360;. {item.price}</h3>
+                  <h3 className="heading">&#8360;. {(item.price)*100}</h3>
 
                 </div>
                 </div>
