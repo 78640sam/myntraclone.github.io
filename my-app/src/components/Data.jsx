@@ -31,7 +31,7 @@ function Data() {
   useEffect(()=>{
     setData(item)
   },[item])
-  useEffect(()=>{
+  useEffect((item)=>{
     if(search.length>=3){
       setData(item.filter(el=>el.title.includes(search)))
     }
