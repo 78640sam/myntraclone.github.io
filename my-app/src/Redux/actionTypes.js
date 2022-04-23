@@ -1,7 +1,7 @@
 export const ActionTypes= {
     
 STORE_ITEM : "STORE_ITEM",
-SEARCH_ITEM:"SEARCH"
-
+SEARCH_ITEM:"SEARCH",
+SELECT_ITEM:"SELECT_ITEM"
 
 };

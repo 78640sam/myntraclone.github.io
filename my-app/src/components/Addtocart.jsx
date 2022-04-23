@@ -4,17 +4,24 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
+import { useSelector } from "react-redux";
 
-
-function AddtoCart() {
+function AddtoCart({cardDetails}) {
     const [data, setData] = useState([]);
-    let [refresh,setRefresh]=useState(false)
-    const cart  =  () => {
-        fetch("http://localhost:3004/item").then(res=>res.json()).then(res=>setData(res))
-    }
+    let [refresh,setRefresh]=useState(false);
+    console.log("cardDetails",cardDetails)
+    const [additem,setAdditem]=useState([]);
+    setAdditem(useSelector((state) => state.carditems));
+    // const cart  =  () => {
+    //     fetch("http://localhost:3004/item").then(res=>res.json()).then(res=>{
+    //         setData(res);
+    //         console.log("data",data)
+    // })
+        
+    // }
 
     useEffect(() => {
-         cart();
+        //  cart();
     }, [refresh]);
 
     const deleting=(el)=>{
@@ -22,7 +29,7 @@ function AddtoCart() {
        fetch("http://localhost:3004/item").then(res=>res.json()).then(res=>setData(res))
     }
 
-
+console.log(additem)
     return (
         <>
         <Header/>
@@ -30,7 +37,7 @@ function AddtoCart() {
 <div className="add-to-cart-main-div">
     <div> 
             {
-                data.map((item) => {
+               additem.map((item) => {
                     return (<div key={item.id}>
 
                         <div className="main-container-addtocart">
@@ -69,6 +76,11 @@ function AddtoCart() {
             }
            </div>
             <div className="second-add-sec">
+                {
+                  
+                 
+                  
+                }
                 <h1>Total Price :4500</h1>
               <a href="/payment"><button className="btn">PAYMENT</button></a>  
             </div>

@@ -41,12 +41,12 @@ import {Navigate} from "react-router-dom"
       
         <div className="login-main-1">
   <h1 className="span-tag">Login</h1>
-          <TextField id="outlined-basic"className="input-ui"   label="Email" variant="outlined"  onChange={(el) => {
-            setEmail(el.target.value);
+          <TextField id="outlined-basic"className="input-ui"   label="Email" variant="outlined"  onChange={(e) => {
+            setEmail(e.target.value);
 
           }} /> <br /> <br /> <br />
-          <TextField id="outlined-basic" className="input-ui"   label="Password" variant="outlined"  onChange={(el) => {
-            setPass(el.target.value);
+          <TextField id="outlined-basic" className="input-ui"   label="Password" variant="outlined"  onChange={(e) => {
+            setPass(e.target.value);
 
           }} />
           <br /> <br /> <br />

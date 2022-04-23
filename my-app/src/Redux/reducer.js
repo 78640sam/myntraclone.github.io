@@ -2,7 +2,8 @@ import {ActionTypes} from './actionTypes';
 
 const initState ={
     item : [],
-    searchString:""
+    searchString:"",
+    carditems:[]
 }
 
 const reducer = (state=initState,action) =>{
@@ -13,6 +14,8 @@ const reducer = (state=initState,action) =>{
             return{...state, item: action.payload }
         case ActionTypes.SEARCH_ITEM :
             return {...state,searchString:action.payload}
+        case ActionTypes.SELECT_ITEM:
+            return{...state,carditems:[...state.carditems,action.payload]}
             default :
             return state;
     }
