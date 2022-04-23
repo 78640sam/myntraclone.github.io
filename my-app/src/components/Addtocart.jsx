@@ -3,7 +3,11 @@ import './style.css';
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-
+import Rating from '@mui/material/Rating'
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+import { deepOrange } from '@mui/material/colors';
+import StarIcon from '@mui/icons-material/Star';
 
 
 function AddtoCart() {
@@ -45,7 +49,7 @@ function AddtoCart() {
         <Header/>
 <hr/>
 <div className="add-to-cart-main-div">
-    <div> 
+    <div className="addto-cart-1-2"> 
             {
                 data.map((item) => {
                     return (<div key={item.id}>
@@ -86,8 +90,35 @@ function AddtoCart() {
             }
            </div>
             <div className="second-add-sec">
+                <h5>DONATE FOR COVID-19 RELIFE</h5>
+                <h3>Help India fight COVID 19 </h3>
+                <Stack direction="row" spacing={3}>
+
+<Avatar sx={{ bgcolor: deepOrange[900] }}>10</Avatar>
+<Avatar sx={{ bgcolor: deepOrange[900] }}>20</Avatar>
+<Avatar sx={{ bgcolor: deepOrange[900] }}>50</Avatar>
+<Avatar sx={{ bgcolor: deepOrange[900] }}>100</Avatar>
+
+</Stack>
+                
+            <hr/>
+            <p>Rating</p>
+            <Rating
+              name="text-feedback"
+              value={4}
+              readOnly
+              precision={0.5}
+              emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
+            /> 
+            <h4 className="sig-prod-page-1">AVAILABLE OFFERS</h4>
+            <hr/>
+            <p className="sig-prod-page" >&#9679; Coupon Discount: Rs. 320 off (check cart for final savings)</p>
+ <p className="sig-prod-page">&#9679; Applicable on: Orders above Rs. 2499 (only on first purchase)</p>
+ <p className="sig-prod-page">Coupon code: MYNTRA400</p>
+ <hr/>
                 <h1>Total Price :{total*100}</h1>
-              <a href="/payment"><button className="btn">PAYMENT</button></a>  
+                <hr/>
+              <a href="/payment"><button className="btn">PLACE ORDER</button></a>  
             </div>
             </div>
             <hr/>

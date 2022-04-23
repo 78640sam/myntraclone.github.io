@@ -206,7 +206,7 @@
 .btn {
     background-color: rgb(255, 62, 109);
     width: 400px;
-    height: 80px;
+    height: 60px;
     border-radius: 10px;
     border-style: none;
     color: white;
@@ -288,30 +288,39 @@
 
 .main-container-addtocart-1 {
     display: flex;
-    /* border:1px solid grey; */
-    width: 800px;
-    height: 200px;
+    border:1px solid grey;
+    padding:10px 20px 10px 30px;
+    
+    /* width: 800px;
+    height: 200px; */
     border-radius: 10px;
-    justify-content: center;
-    gap: 40px;
+  
+    /* gap: 40px; */
     margin-bottom: 20px;
 
 }
 
 .main-container-addtocart {
 
-    display: flex;
-    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 45% 5%;
+  gap:10px;
     margin-left: 100px;
-    justify-content: center;
+   
 }
 
 .add-to-cart-main-div {
-
-    display: flex;
-
+margin-top: 40px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap:5%;
+  
+height:120vh;
 
 }
+/* .addto-cart-1-2{
+   
+} */
 
 .btn-add-t {
     width: 40px;
@@ -320,18 +329,23 @@
 
 .second-add-sec {
     margin-left: 100px;
-    border: 1px solid black;
+    position: absolute;
+    right: 0;
+    margin-right: 20%;
+    
     width: 400px;
     height: 600px;
     border-radius: 10px;
+ 
 }
 
 .second-add-sec>h1 {
-    margin-top: 430px;
+    margin-top: 10px;
+    
 }
 
 .payment-page-1 {
-
+ 
     margin-top: 100px;
     margin-left: 500px;
     margin-bottom: 100px;
