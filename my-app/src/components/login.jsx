@@ -17,7 +17,7 @@ import {Navigate} from "react-router-dom"
     fetch("https://myntajsonserver.herokuapp.com/user").then(response => response.json())
       .then((data) => 
       data.forEach((element) => {
-        if(element.email==email && element.password==pass){
+        if(element.email===email && element.password===pass){
           console.log(element)
           setBool(true)
         }
