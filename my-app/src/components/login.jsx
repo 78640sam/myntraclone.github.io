@@ -50,7 +50,7 @@ import {Navigate} from "react-router-dom"
           }} />
           <br /> <br /> <br />
           <Button  variant="contained"  className="login-btn-1" onClick={login}> Signup </Button>
-       <br/> <br/> <span>Go to</span> <a className="link" href="/Signup"> <span className="span-tag"> Signup</span> </a>
+       <br/> <br/> <span>Go to</span> <a className="link" href="/Signup"> <span className="span-tag"> Login</span> </a>
         </div>
 
 
