@@ -9,7 +9,7 @@ import Footer from "./Footer";
 function AddtoCart() {
     const [data, setData] = useState([]);
     const [total,setTotal]=useState(0);
-    let [refresh,setRefresh]=useState(false)
+    let [refresh,]=useState(false)
     const cart  =  () => {
         
         fetch("https://myntajsonserver.herokuapp.com/item").then(res=>res.json()).then((res)=>{setData(res); 

@@ -3,7 +3,7 @@ import "./style.css";
 import PersonIcon from '@mui/icons-material/Person';
 import FavoriteBorderSharpIcon from '@mui/icons-material/FavoriteBorderSharp';
 import LocalMallSharpIcon from '@mui/icons-material/LocalMallSharp';
-import { useSelector, useDispatch } from 'react-redux';
+import {  useDispatch } from 'react-redux';
 import { searchItem } from "../Redux/action";
 
 // import SearchSharpIcon from '@mui/icons-material/SearchSharp';
