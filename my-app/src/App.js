@@ -4,12 +4,12 @@ import './App.css';
 // import {Product, Product1,Product2} from './components/Product';
   // import Footer from './components/Footer';
 import {Route,Routes} from "react-router-dom";
-import Data from './components/Data';
-import AddtoCart from './components/Addtocart';
-import Payment from './components/Payment';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import Home from './components/Home';
+import Data from './Components/Data';
+import AddtoCart from './Components/Addtocart';
+import Payment from './Components/Payment';
+import Login from './Components/Login';
+import Signup from './Components/Signup';
+import Home from './Components/Home';
 
 
 function App() {
