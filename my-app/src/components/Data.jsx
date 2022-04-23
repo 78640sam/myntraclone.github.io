@@ -57,9 +57,13 @@ function Data() {
           <div className="individual-page-item-left">
 
             <img src={detail.image} alt="img" className="product-image-1" />
+            <img src={detail.image} alt="img" className="product-image-1" />
+            <img src={detail.image} alt="img" className="product-image-1" />
+            <img src={detail.image} alt="img" className="product-image-1" />
           </div><div className="individual-page-item-right">
+          <h1>{detail.category}</h1>
             <p>{detail.title}</p>
-            <h1>{detail.category}</h1>
+          
             <p>{detail.description}</p>
             <h4>Ratting :5/{detail.rating.rate}</h4>
             <Rating
@@ -83,7 +87,18 @@ function Data() {
             <h3>&#8360;.{(detail.price) * 100}</h3>
 
             <button onClick={() => { addtoCart(detail); setNavigate(true) }} className="btn"><LocalMallSharpIcon />  ADD TO BAG</button>
-
+ <h2 className="sig-prod-page-1">DELIVERY OPTIONS </h2>
+ <p className="sig-prod-page">&#9679; Pay on delivery might be available</p>
+ <p className="sig-prod-page">&#9679; Easy 30 days returns and exchanges</p>
+ <p className="sig-prod-page">&#9679;Try & Buy might be available</p>
+ <p className="sig-prod-page" >&#9679; Coupon Discount: Rs. 320 off (check cart for final savings)</p>
+ <p className="sig-prod-page">&#9679; Applicable on: Orders above Rs. 2499 (only on first purchase)</p>
+ <p className="sig-prod-page">Coupon code: MYNTRA400</p>
+ <h4 className="sig-prod-page-1">Get additional offer</h4>
+ <p className="sig-prod-page">&#9679;Buy this style and unlock additional 10% off upto ₹100 on a selected catalogue</p>
+ <h4 className="sig-prod-page-1">View Products</h4>
+ <h3 className="sig-prod-page-1">EMI option available</h3>
+ <p className="sig-prod-page">&#9679;EMI starting from Rs.94/month</p>
           </div>
 
         </div><hr /><Footer /> </> :
