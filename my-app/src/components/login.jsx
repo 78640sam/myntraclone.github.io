@@ -6,6 +6,7 @@ import { useState } from "react";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
+
 import {Navigate} from "react-router-dom"
  function LoginData() {
   const [email, setEmail] = useState();
@@ -20,6 +21,9 @@ import {Navigate} from "react-router-dom"
         if(element.email===email && element.password===pass){
           console.log(element)
           setBool(true)
+        }else{
+          alert("Invalid Email OR password");
+         
         }
       })
       )
