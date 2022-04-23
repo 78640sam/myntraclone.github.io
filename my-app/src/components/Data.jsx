@@ -84,7 +84,7 @@ function Data() {
               <Avatar sx={{ bgcolor: deepOrange[300] }}>XXL</Avatar>
               <Avatar sx={{ bgcolor: deepOrange[300] }}>3XL</Avatar>
             </Stack>
-            <h3>&#8360;.{(detail.price) * 100}</h3>
+            <h3>Best Price: &#8360;.{(detail.price) * 100}</h3>
 
             <button onClick={() => { addtoCart(detail); setNavigate(true) }} className="btn"><LocalMallSharpIcon />  ADD TO BAG</button>
  <h2 className="sig-prod-page-1">DELIVERY OPTIONS </h2>

@@ -261,7 +261,7 @@
     margin: auto;
     /* width: 70%; */
     margin-left: 5%;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
 
 }
@@ -278,7 +278,6 @@
 
 .product-image-1 {
     width: 250px;
-
 }
 
 .product-image-1:hover {
