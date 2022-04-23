@@ -13,9 +13,10 @@ function Payment() {
         <Header/>
         <hr/>
     <div className="Header-container">
-     
+   
     <div>
 <div className="payment-page-1">
+<h1 className="span-tag" >Payment</h1>
       <TextField id="outlined-basic" className="input-ui"  label="Address Line 1" variant="outlined"/>
       <br/><br/>
       <TextField id="outlined-basic" className="input-ui"  label="Address Line 2" variant="outlined" />
@@ -33,7 +34,7 @@ function Payment() {
       <br/><br/>
       <TextField id="outlined-basic"  className="input-ui"  label=" Pin" variant="outlined" />
       <br/><br/>
-     <a href="/" className="link"> <Button className="input-ui" variant="contained" onClick={()=>{alert("CONGRATULATIONS! YOUR ORDER PLACED SUCCESFULLY..")
+     <a href="/" className="link"> <Button className="input-ui" style={{backgroundColor: "#ff3f6c"}} variant="contained" onClick={()=>{alert("CONGRATULATIONS! YOUR ORDER PLACED SUCCESFULLY..")
     }}> Payment </Button></a>
  </div>
   </div>

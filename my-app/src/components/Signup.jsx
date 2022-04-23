@@ -46,7 +46,7 @@ function Signup() {
            
           }}/>
           <br/> <br/> <br/>
-      <Button  variant="contained" className="login-btn-1" onClick={registerUser}> Signup </Button>
+      <Button  variant="contained" className="login-btn-1" style={{backgroundColor: "#ff3f6c"}}  onClick={registerUser}> Signup </Button>
       <br/> <br/> <span>Go to </span> <a className="link"  href="/login">  
       <span className="span-tag">login</span></a>
 
