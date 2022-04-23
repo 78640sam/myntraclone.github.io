@@ -13,22 +13,21 @@ import {Navigate} from "react-router-dom"
   const [homeBool, setBool] = useState(false);
 
   const login = () => {
-    fetch("http://localhost:3004/user").then(response => response.json())
-      .then(data => data.forEach(el => {
-       if(el.email===email && el.password===pass){
-    setBool(true);
-   }
+   
+    fetch("https://myntajsonserver.herokuapp.com/user").then(response => response.json())
+      .then((data) => 
+      data.forEach((element) => {
+        if(element.email==email && element.password==pass){
+          console.log(element)
+          setBool(true)
+        }
       })
-
       )
 
-      if(homeBool){
-        return <Navigate to="/" />;
-      }else{
-        alert("Enter Valid Creadentials")
-      }
   }
-  
+  if(homeBool){
+    return <Navigate to="/" ></Navigate>
+  }
   
   
  
@@ -41,12 +40,12 @@ import {Navigate} from "react-router-dom"
       
         <div className="login-main-1">
   <h1 className="span-tag">Login</h1>
-          <TextField id="outlined-basic"className="input-ui"   label="Email" variant="outlined"  onChange={(e) => {
-            setEmail(e.target.value);
+          <TextField id="outlined-basic"className="input-ui"   label="Email" variant="outlined"  onChange={(el) => {
+            setEmail(el.target.value);
 
           }} /> <br /> <br /> <br />
-          <TextField id="outlined-basic" className="input-ui"   label="Password" variant="outlined"  onChange={(e) => {
-            setPass(e.target.value);
+          <TextField id="outlined-basic" className="input-ui"   label="Password" variant="outlined"  onChange={(el) => {
+            setPass(el.target.value);
 
           }} />
           <br /> <br /> <br />

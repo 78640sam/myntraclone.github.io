@@ -4,32 +4,42 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-import { useSelector } from "react-redux";
 
-function AddtoCart({cardDetails}) {
+
+function AddtoCart() {
     const [data, setData] = useState([]);
-    let [refresh,setRefresh]=useState(false);
-    console.log("cardDetails",cardDetails)
-    const [additem,setAdditem]=useState([]);
-    setAdditem(useSelector((state) => state.carditems));
-    // const cart  =  () => {
-    //     fetch("http://localhost:3004/item").then(res=>res.json()).then(res=>{
-    //         setData(res);
-    //         console.log("data",data)
-    // })
+    const [total,setTotal]=useState(0);
+    let [refresh,setRefresh]=useState(false)
+    const cart  =  () => {
         
-    // }
+        fetch("https://myntajsonserver.herokuapp.com/item").then(res=>res.json()).then((res)=>{setData(res); 
+      
+       })
+       
+    }
+    useEffect(()=>{
+        let sum=0;
+        fetch("https://myntajsonserver.herokuapp.com/item").then(res=>res.json()).then((res)=>{
+       res.forEach(el=>sum+=el.price);
+       setTotal(sum)
+       setData(res); 
+      
+       })
+    },[data])
+
 
     useEffect(() => {
-        //  cart();
+         cart();
     }, [refresh]);
 
     const deleting=(el)=>{
-       fetch(`http://localhost:3004/item/${el.id}`,{method:"DELETE"});
-       fetch("http://localhost:3004/item").then(res=>res.json()).then(res=>setData(res))
+       fetch(`https://myntajsonserver.herokuapp.com/item/${el.id}`,{method:"DELETE"});
+       fetch("https://myntajsonserver.herokuapp.com/item").then(res=>res.json()).then((res)=>{setData(res); 
+    })
+      
     }
 
-console.log(additem)
+
     return (
         <>
         <Header/>
@@ -37,7 +47,7 @@ console.log(additem)
 <div className="add-to-cart-main-div">
     <div> 
             {
-               additem.map((item) => {
+                data.map((item) => {
                     return (<div key={item.id}>
 
                         <div className="main-container-addtocart">
@@ -76,12 +86,7 @@ console.log(additem)
             }
            </div>
             <div className="second-add-sec">
-                {
-                  
-                 
-                  
-                }
-                <h1>Total Price :4500</h1>
+                <h1>Total Price :{total*100}</h1>
               <a href="/payment"><button className="btn">PAYMENT</button></a>  
             </div>
             </div>

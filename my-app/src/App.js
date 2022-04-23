@@ -10,29 +10,41 @@ import Payment from './Components/Payment';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Home from './Components/Home';
-import { useState } from 'react';
 
 
 function App() {
-  //add to card data
- const [cardDetails,setCardDetails]=useState([]);
-
   return (
     <div className="App">
      
-   
+     {/* <Header/>
+    <Headerslider/>
+    <Product/>
+    <Product1/>
+    <Product2/>
+    <Footer/> */}
 
     <Routes>
     <Route path="/" element={<Home/>}></Route>
-      <Route path="/products" element={<Data setCardDetails={setCardDetails} cardDetails={cardDetails}/>}></Route>
-      <Route path="/addtocart" element={<AddtoCart cardDetails={cardDetails}/>}></Route>
+    {/* <Route path="/" element={<Product/>}></Route>
+    <Route path="/" element={<Product1/>}></Route>
+    <Route path="/" element={<Product2/>}></Route> */}
+      <Route path="/products" element={<Data/>}></Route>
+    
+    
+      <Route path="/addtocart" element={<AddtoCart/>}></Route>
       <Route path="/payment" element={<Payment/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/signup" element={<Signup/>}></Route>
      
     
     </Routes>
+    {/* <Payment/> */}
+    {/* <Data/> */}
+{/* <Signup/> */}
 
+{/* <Login/> */}
+    
+    {/* <AddtoCart/> */}
 
     </div>
   );

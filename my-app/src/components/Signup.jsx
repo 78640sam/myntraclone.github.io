@@ -17,7 +17,7 @@ function Signup() {
   
    
     const registerUser = (data) => {
-      fetch("http://localhost:3004/user", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify( {
+      fetch("https://myntajsonserver.herokuapp.com/user", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify( {
         email: email,
         name: name,
         password: pass,

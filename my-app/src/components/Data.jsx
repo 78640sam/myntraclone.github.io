@@ -1,23 +1,18 @@
 import "./style.css"
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
-import { storeItem ,selectItem } from "../Redux/action";
+import { storeItem } from "../Redux/action";
 import Header from "./Header";
 import Footer from "./Footer"
 import LocalMallSharpIcon from '@mui/icons-material/LocalMallSharp';
 import { Navigate } from "react-router-dom";
-import Rating from '@mui/material/Rating'
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
-import { deepOrange, deepPurple } from '@mui/material/colors';
-
-import StarIcon from '@mui/icons-material/Star';;
 //import { useNavigate } from "react-router-dom"
 
 
 
-function Data({setCardDetails,cardDetails}) {
- console.log(cardDetails,"cd");
+function Data() {
+
+
   const [detailBool, setBool] = useState(false);
   const [navigate, setNavigate] = useState(false);
   const [detail, setDetail] = useState({});
@@ -33,7 +28,6 @@ function Data({setCardDetails,cardDetails}) {
   }, [dispatch]);
   const item = useSelector((state) => state.item);
   const search = useSelector((state) => state.searchString);
-
   useEffect(()=>{
     setData(item)
   },[item])
@@ -45,14 +39,8 @@ function Data({setCardDetails,cardDetails}) {
   },[search,item])
   console.log(data)
   const addtoCart = (data) => {
-    // fetch("http://localhost:3004/item", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
-    //usestate()
-    // console.log("before",cardDetails)
-    // setCardDetails([...cardDetails,data])
-    console.log("hii")
-    dispatch(selectItem(data))
-
-    console.log(cardDetails)
+    fetch("https://myntajsonserver.herokuapp.com/item", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
+    
   }
   if(navigate){
     return <Navigate to="/addtocart"></Navigate>
@@ -70,24 +58,6 @@ function Data({setCardDetails,cardDetails}) {
                   <h1>{detail.category}</h1>
                   <p>{detail.description}</p>
                   <h4>Ratting :5/{detail.rating.rate}</h4>
-                  <Rating
-        name="text-feedback"
-        value={4}
-        readOnly
-        precision={0.5}
-        emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
-      />
-      <br/><br/>
-      <p>SELECT SIZE   <span className="span-tag">  SIZE CHART</span></p>
-      <Stack direction="row" spacing={3}>
-    
-      <Avatar sx={{ bgcolor: deepOrange[300] }}>S</Avatar>
-      <Avatar sx={{ bgcolor: deepOrange[300] }}>M</Avatar>
-      <Avatar sx={{ bgcolor: deepOrange[300] }}>L</Avatar>
-      <Avatar sx={{ bgcolor: deepOrange[300] }}>XL</Avatar>
-      <Avatar sx={{ bgcolor: deepOrange[300] }}>XXL</Avatar>
-      <Avatar sx={{ bgcolor: deepOrange[300] }}>3XL</Avatar>
-    </Stack>
                   <h3>&#8360;.{(detail.price)*100}</h3>
 
        <button onClick={() => { addtoCart(detail);setNavigate(true)  }} className="btn"><LocalMallSharpIcon/>  ADD TO BAG</button>
