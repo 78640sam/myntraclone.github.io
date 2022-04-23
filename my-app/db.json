@@ -1,28 +1,23 @@
 {
   "user": [
     {
-      "email": "hgg",
+      "email": "hgg@gmail.com",
       "name": "avbb",
       "password": "ghc",
       "id": 1
     },
     {
-      "email": "hgg",
+      "email": "hgg@gmail.com",
       "name": "avbb",
       "password": "ghc",
       "id": 2
     },
+   
     {
-      "email": "bitti",
-      "name": "bitti",
-      "password": "bitti",
-      "id": 3
-    },
-    {
-      "email": "sp",
+      "email": "spm@gmail.com",
       "name": "Prathgam",
       "password": "pratham",
-      "id": 4
+      "id": 3
     }
   ],
   "item": [
