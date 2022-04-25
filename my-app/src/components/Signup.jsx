@@ -23,7 +23,8 @@ function Signup() {
         password: pass,
       }) });
      
-
+      alert("login succesfull")
+     window.location.href="/login";
     }
 
   return (
