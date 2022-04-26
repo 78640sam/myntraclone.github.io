@@ -6,6 +6,8 @@ import "./style.css";
  import { useState } from "react";
  import Button from '@mui/material/Button';
  import TextField from '@mui/material/TextField';
+//  import { Link } from "react-router-dom";
+
 
 
 function Signup() {
@@ -17,12 +19,16 @@ function Signup() {
   
    
     const registerUser = (data) => {
+
+      
       fetch("https://myntajsonserver.herokuapp.com/user", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify( {
         email: email,
         name: name,
         password: pass,
       }) });
-     
+      
+      alert("login succesfull")
+     window.location.href="/login";
 
     }
 

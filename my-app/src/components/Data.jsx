@@ -36,9 +36,9 @@ function Data() {
     setData(item)
   }, [item])
   useEffect(() => {
-    if (search.length >= 3) {
+    // if (search.length >= 3) {
       setData(item.filter(el => el.title.includes(search)))
-    }
+    // }
 
   }, [search, item])
   console.log(data)

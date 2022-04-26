@@ -10,7 +10,7 @@ import Payment from './Components/Payment';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Home from './Components/Home';
-
+import Search from './Components/Search';
 
 function App() {
   return (
@@ -43,7 +43,7 @@ function App() {
 {/* <Signup/> */}
 
 {/* <Login/> */}
-    
+    {/* <Search/> */}
     {/* <AddtoCart/> */}
 
     </div>
