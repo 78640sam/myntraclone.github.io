@@ -14,7 +14,7 @@ function Search() {
       "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
       "rating": {
         "rate": 3.9,
-        "count": 120
+        "count": 122
       }
     }, {
       "id": 2,
