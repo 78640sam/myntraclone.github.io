@@ -24,11 +24,6 @@ import {Navigate} from "react-router-dom"
           console.log(element)
           setBool(true);
 
-        }else{
-          alert("Invalid Email OR password");
-        
-
-         
         }
       })
       )
