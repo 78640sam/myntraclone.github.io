@@ -8,7 +8,7 @@ function Headerslider() {
     <div className="Slider-image">
     
       <Carousel>
-          <div>
+          <div className="Slider-image-1-1">
               <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/9/d88bf465-8b71-489b-99f6-311c832b89ad1649528433105-Kurtas---Sets_Dk.jpg" 
               alt='' />
           </div>
