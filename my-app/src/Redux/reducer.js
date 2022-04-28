@@ -1,18 +1,31 @@
-import {ActionTypes} from './actionTypes';
+import {IS_ERROR,IS_LOADING,SEARCH_ITEM,STORE_ITEM,SUCCESS} from './actionTypes';
 
 const initState ={
     item : [],
-    searchString:""
+    searchString:"",
+    isLoading:false,
+    isError:false,
+    succes:false,
 }
 
 const reducer = (state=initState,action) =>{
   
     // eslint-disable-next-line default-case
     switch(action.type){
-        case ActionTypes.STORE_ITEM :
+     
+
+        case STORE_ITEM :
             return{...state, item: action.payload }
-        case ActionTypes.SEARCH_ITEM :
+        case SEARCH_ITEM :
             return {...state,searchString:action.payload}
+            case IS_LOADING:
+                return {...state,isLoading:true}
+    
+                case IS_ERROR:
+                    return {...state,isLoding :false, isError : true, succes:false}
+    
+                    case SUCCESS:
+                        return {...state,isLoding :false, isError : false, succes:true}
             default :
             return state;
     }

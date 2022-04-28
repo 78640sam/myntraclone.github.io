@@ -1,7 +1,7 @@
 import "./style.css"
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
-import { storeItem } from "../Redux/action";
+import { storeItem, handleLoading, handleError, handleSuccess } from "../Redux/action";
 import Header from "./Header";
 import Footer from "./Footer"
 import LocalMallSharpIcon from '@mui/icons-material/LocalMallSharp';
@@ -23,13 +23,14 @@ function Data() {
   const [data, setData] = useState([]);
   const dispatch = useDispatch()
   useEffect(() => {
-
+    dispatch(handleLoading())
     fetch('https://fakestoreapi.com/products')
       .then((res) => res.json())
-      .then((res) => dispatch(storeItem(res)))
-      .catch((error) => console.log(error))
+      .then((res) => {dispatch(storeItem(res)); dispatch(handleSuccess())})
+      .catch((error) =>  dispatch(handleError()))
 
   }, [dispatch]);
+  const loading=useSelector((state)=> state.isLoading);
   const item = useSelector((state) => state.item);
   const search = useSelector((state) => state.searchString);
   useEffect(() => {
@@ -219,6 +220,8 @@ function Data() {
                 </form>
               </div>
             </div>
+            {loading?<div> Loading..</div> : <div>
+
             <div className="cont">{
               data.map((item) => {
                 return (
@@ -248,7 +251,42 @@ function Data() {
 
                 )
               })
-            }</div></div><hr />
+            }</div>
+
+            </div>
+            }
+            {/* <div className="cont">{
+              data.map((item) => {
+                return (
+
+                  <div className="main-container-1-1" onClick={() => {
+                    setDetail(item);
+                    console.log(detail)
+                    setBool(true)
+
+                  }}>
+
+                    <div>
+
+                      <img src={item.image} alt="img" className="product-image" />
+                      <h2>{item.category}</h2>
+                      <p className="para">{item.title}</p>
+
+
+                      <h3 className="heading">&#8360;. {(item.price) * 100}</h3>
+
+                    </div>
+                  </div>
+
+
+
+
+
+                )
+              })
+            }</div> */}
+            
+            </div><hr />
           <Footer /></>}
 
     </div>
