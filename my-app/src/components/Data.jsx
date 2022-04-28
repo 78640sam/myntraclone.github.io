@@ -11,7 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { deepOrange } from '@mui/material/colors';
 import StarIcon from '@mui/icons-material/Star';
-
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 function Data() {
@@ -105,7 +105,7 @@ function Data() {
 
         </div><hr /><Footer /> </> :
         <>
-   {loading?<div> Loading..</div> :
+   {loading?<div> <CircularProgress className="product-loading" disableShrink />;</div> :
             error?<div><h1>error....</h1></div>: <div>
           <Header />
           <hr />
