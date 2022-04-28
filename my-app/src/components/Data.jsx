@@ -105,7 +105,8 @@ function Data() {
 
         </div><hr /><Footer /> </> :
         <>
-
+   {loading?<div> Loading..</div> :
+            error?<div><h1>error....</h1></div>: <div>
           <Header />
           <hr />
           <div className="Data-main-cointer">
@@ -221,8 +222,7 @@ function Data() {
                 </form>
               </div>
             </div>
-            {loading?<div> Loading..</div> :
-            error?<div><h1>error....</h1></div>: <div>
+          <div>
 
             <div className="cont">{
               data.map((item) => {
@@ -257,7 +257,7 @@ function Data() {
 
             </div> 
 
-            }
+            
             {/* <div className="cont">{
               data.map((item) => {
                 return (
@@ -290,7 +290,12 @@ function Data() {
             }</div> */}
             
             </div><hr />
-          <Footer /></>}
+          <Footer />
+          </div>  }
+
+          </>
+
+          }
 
     </div>
 
