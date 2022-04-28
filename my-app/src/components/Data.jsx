@@ -15,7 +15,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 
 function Data() {
-  
+
   const [detailBool, setBool] = useState(false);
   const [navigate, setNavigate] = useState(false);
   const [detail, setDetail] = useState({});
@@ -46,7 +46,7 @@ function Data() {
 
   useEffect(() => {
 
-    setData(item.filter(el => el.title.includes(search)))
+    setData(item.filter(el => el.category.includes(search)))
   }, [search, item])
 
 
