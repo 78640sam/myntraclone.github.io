@@ -4,7 +4,7 @@ const storeItem=(items)=> ({
     payload : items,
     
 })
-console.log("action",storeItem);
+// console.log("action",storeItem);
 // const selectItem=(items)=> ({
 //     type : SELECT_ITEM,
 //     payload : items,
