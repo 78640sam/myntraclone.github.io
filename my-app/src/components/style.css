@@ -300,8 +300,7 @@
     border:1px solid grey;
     padding:10px 20px 10px 30px;
     
-    /* width: 800px;
-    height: 200px; */
+   
     border-radius: 10px;
   
     /* gap: 40px; */
@@ -327,9 +326,7 @@ margin-top: 40px;
 height:120vh;
 
 }
-/* .addto-cart-1-2{
-   
-} */
+
 
 .btn-add-t {
     width: 40px;
