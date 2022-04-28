@@ -30,6 +30,7 @@ function Data() {
       .catch((error) =>  dispatch(handleError()))
 
   }, [dispatch]);
+  const error = useSelector((state)=> state.isError);
   const loading=useSelector((state)=> state.isLoading);
   const item = useSelector((state) => state.item);
   const search = useSelector((state) => state.searchString);
@@ -220,7 +221,8 @@ function Data() {
                 </form>
               </div>
             </div>
-            {loading?<div> Loading..</div> : <div>
+            {loading?<div> Loading..</div> :
+            error?<div><h1>error....</h1></div>: <div>
 
             <div className="cont">{
               data.map((item) => {
@@ -253,7 +255,8 @@ function Data() {
               })
             }</div>
 
-            </div>
+            </div> 
+
             }
             {/* <div className="cont">{
               data.map((item) => {
