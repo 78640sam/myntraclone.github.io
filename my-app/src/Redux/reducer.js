@@ -15,17 +15,17 @@ const reducer = (state=initState,action) =>{
      
 
         case STORE_ITEM :
-            return{...state, item: action.payload }
+            return{...state, isLoading :false,item: action.payload }
         case SEARCH_ITEM :
             return {...state,searchString:action.payload}
             case IS_LOADING:
                 return {...state,isLoading:true}
     
                 case IS_ERROR:
-                    return {...state,isLoding :false, isError : true, succes:false}
+                    return {...state,isLoading :false, isError : true, succes:false}
     
                     case SUCCESS:
-                        return {...state,isLoding :false, isError : false, succes:true}
+                        return {...state,isLoading :false, isError : false, succes:true}
             default :
             return state;
     }
