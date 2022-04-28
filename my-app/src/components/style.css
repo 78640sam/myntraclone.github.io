@@ -386,3 +386,15 @@ height:120vh;
 .sig-prod-page{
     color:gray;
 }
+.product-loading{
+    color:#ff3f6c;
+    margin-left: 50%;
+   
+    font-size: 200px;
+}
+.loading-1{
+    color:#ff3f6c;
+    margin-left: 45%;
+    margin-top: 350px;
+font-size: 40px;
+}
