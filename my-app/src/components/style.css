@@ -470,7 +470,7 @@ font-size: 40px;
     }
     .individual-page-item {
         display: grid;
-        /* justify-content: center; */
+  
         margin: auto;
         width: 400px;
        
@@ -567,7 +567,7 @@ font-size: 40px;
     }
     .individual-page-item {
         display: grid;
-        /* justify-content: center; */
+        
         margin: auto;
         width: 400px;
         margin-left: 5%;
