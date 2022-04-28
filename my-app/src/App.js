@@ -12,12 +12,7 @@ function App() {
   return (
     <div className="App">
      
-     {/* <Header/>
-    <Headerslider/>
-    <Product/>
-    <Product1/>
-    <Product2/>
-    <Footer/> */}
+   
 
     <Routes>
     <Route path="/" element={<Home/>}></Route>
