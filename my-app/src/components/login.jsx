@@ -1,5 +1,4 @@
 import "./style.css";
-//import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Header from './Header';
 import Footer from './Footer';
 import { useState } from "react";
@@ -15,12 +14,15 @@ import {Navigate} from "react-router-dom"
 
   const login = () => {
    
-    fetch("https://myntajsonserver.herokuapp.com/user").then(response => response.json())
-      .then((data) => 
-      data.forEach((element) => {
-        if(element.email===email && element.password===pass){
+    fetch("https://myntajsonserver.herokuapp.com/user")
+    .then(response => response.json())
+    .then((data) => 
+    data.forEach((element) => {
+       
+      if(element.email===email && element.password===pass){
           console.log(element)
-          setBool(true)
+          setBool(true);
+
         }else{
           alert("Invalid Email OR password");
         
@@ -29,7 +31,6 @@ import {Navigate} from "react-router-dom"
         }
       })
       )
-
   }
   if(homeBool){
     return <Navigate to="/" ></Navigate>
