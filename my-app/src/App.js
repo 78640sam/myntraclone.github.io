@@ -16,12 +16,7 @@ function App() {
 
     <Routes>
     <Route path="/" element={<Home/>}></Route>
-    {/* <Route path="/" element={<Product/>}></Route>
-    <Route path="/" element={<Product1/>}></Route>
-    <Route path="/" element={<Product2/>}></Route> */}
       <Route path="/products" element={<Data/>}></Route>
-    
-    
       <Route path="/addtocart" element={<AddtoCart/>}></Route>
       <Route path="/payment" element={<Payment/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
@@ -29,14 +24,6 @@ function App() {
      
     
     </Routes>
-    {/* <Payment/> */}
-    {/* <Data/> */}
-{/* <Signup/> */}
-
-{/* <Login/> */}
-    {/* <Search/> */}
-    {/* <AddtoCart/> */}
-
     </div>
   );
 }
