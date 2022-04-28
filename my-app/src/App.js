@@ -1,8 +1,4 @@
 import './App.css';
-//  import Headerslider from "./components/Headerslider";
-// import Header from './components/Header';
-// import {Product, Product1,Product2} from './components/Product';
-  // import Footer from './components/Footer';
 import {Route,Routes} from "react-router-dom";
 import Data from './Components/Data';
 import AddtoCart from './Components/Addtocart';
@@ -10,7 +6,7 @@ import Payment from './Components/Payment';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Home from './Components/Home';
-// import Search from './Components/Search';
+
 
 function App() {
   return (

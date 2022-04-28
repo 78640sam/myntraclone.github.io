@@ -106,7 +106,7 @@ function Data() {
         </div><hr /><Footer /> </> :
         <>
    {loading?<div> <h1 className="loading-1">Loading....</h1><CircularProgress className="product-loading" disableShrink />;</div> :
-            error?<div><h1>error....</h1></div>: <div>
+            error?<div><h1 className="loading-1" >Error....</h1></div>: <div>
           <Header />
           <hr />
           <div className="Data-main-cointer">
