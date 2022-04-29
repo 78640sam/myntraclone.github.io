@@ -358,6 +358,8 @@ height:120vh;
 
 }
 
+
+
 .input-ui {
     width: 600px;
 }
@@ -374,9 +376,6 @@ height:120vh;
 .span-tag {
     font-weight: bold;
     color: #ff3f6c
-}
-.payment-page-1>h1{
-    text-align: center;
 }
 .login-btn-1 {
     background-color: #ff3f6c;
@@ -489,22 +488,6 @@ font-size: 40px;
     .individual-page-item-right{
          margin-right: 250px; 
     }
-    .payment-page-1 {
- 
-        margin-top: 100px; 
-        margin-bottom: 100px;
-    
-    }
-    .input-ui {
-        width: 500px;
-        
-    }
-    .payment-page-1>h1{
-        text-align: start;
-    }
-    .Header-container-1-payment{
-        margin-left: -280px;
-    }
   }
 
   
@@ -607,7 +590,7 @@ font-size: 40px;
         display: grid;
         grid-template-columns: 45% 55% 5%;
       gap:190px;
-        
+        /* margin-left: 100px; */
        
     }
     .product-image-addtocart {
@@ -642,7 +625,7 @@ font-size: 40px;
             
             }
             .second-add-sec {
-               
+                /* margin-left: 500px; */
               
                 margin-top: 1000px;
                 
@@ -682,18 +665,9 @@ font-size: 40px;
   
             .payment-page-1 {
  
-                margin-top: 100px; 
-                margin-bottom: 100px;
-            
-            }
-            .input-ui {
-                width: 300px;
-                
-            }
-            .payment-page-1>h1{
-                text-align: start;
-            }
-            .Header-container-1-payment{
-                margin-left: -450px;
-            }
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+
+}
   }
