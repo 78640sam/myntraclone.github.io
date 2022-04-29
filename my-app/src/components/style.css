@@ -586,6 +586,27 @@ font-size: 40px;
     .individual-page-item-right{
         margin-left: -10px;
     }
+    .main-container-addtocart {
+
+        display: grid;
+        grid-template-columns: 45% 55% 5%;
+      gap:190px;
+        /* margin-left: 100px; */
+       
+    }
+    .product-image-addtocart {
+        width: 100px;
+        height: 150px;
+    }
+    .main-1-1-addtocard{
+        width:200px;
+    }
+    .main-1-1-addtocard > p{
+      font-size: 13px;
+    }
+    .add_to_card_ui{
+        margin-left: 100px;
+    }
     .add-to-cart-main-div {
         margin-top: 40px;
             display: grid;
@@ -595,6 +616,52 @@ font-size: 40px;
         height:120vh;
         
         }
-        
+        .add-to-cart-main-div {
+            margin-top: 40px;
+                display: grid;
+                grid-template-columns: auto;
+                gap:5%;
+              
+            height:250vh;
+            
+            }
+            .second-add-sec {
+                /* margin-left: 500px; */
+              
+                margin-top: 1000px;
+                
+                width: 400px;
+                height: 600px;
+                border-radius: 10px;
+             
+            }
+            .second-add-sec >h1{
+                margin-left: 100px;
+          
+            }
+            .second-add-sec >h3{
+                margin-left: 100px;
+           
+            }
+            .second-add-sec >h5{
+                margin-left: 100px;
+            
+            }
+            .second-add-sec >p{
+                margin-left: 100px;
+            
+            }
+            .second-add-sec >h4{
+                margin-left: 100px;
+            
+            }
+            .second-add-sec >a{
+                margin-left: 80px;
+            
+            }
+            .addto-cart-1-2{
+                margin-top: 50px;
+                margin-left: -100px;
+            }
   
   }

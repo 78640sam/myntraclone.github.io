@@ -59,7 +59,7 @@ function AddtoCart() {
                             <div>
                         <img src={item.image} alt="img" className="product-image-addtocart" />
                         </div>
-                        <div>
+                        <div className="main-1-1-addtocard">
                
               
                  
@@ -92,7 +92,7 @@ function AddtoCart() {
             <div className="second-add-sec">
                 <h5>DONATE FOR COVID-19 RELIFE</h5>
                 <h3>Help India fight COVID 19 </h3>
-                <Stack direction="row" spacing={3}>
+                <Stack direction="row" spacing={3} className="add_to_card_ui">
 
 <Avatar sx={{ bgcolor: deepOrange[900] }}>10</Avatar>
 <Avatar sx={{ bgcolor: deepOrange[900] }}>20</Avatar>
@@ -103,11 +103,11 @@ function AddtoCart() {
                 
             <hr/>
             <p>Rating</p>
-            <Rating
+            <Rating className="add_to_card_ui"
               name="text-feedback"
               value={4}
               readOnly
-              precision={0.5}
+              precision={0.5} 
               emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
             /> 
             <h4 className="sig-prod-page-1">AVAILABLE OFFERS</h4>
