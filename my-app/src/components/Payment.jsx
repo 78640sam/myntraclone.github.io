@@ -11,7 +11,7 @@ function Payment() {
       <>
         <Header/>
         <hr/>
-    <div className="Header-container">
+    <div className="Header-container-1-payment">
    
     <div>
 <div className="payment-page-1">

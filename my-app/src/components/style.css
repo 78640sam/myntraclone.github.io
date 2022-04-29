@@ -664,4 +664,20 @@ font-size: 40px;
                 margin-left: -100px;
             }
   
+            .payment-page-1 {
+ 
+                margin-top: 100px; 
+                margin-bottom: 100px;
+            
+            }
+            .input-ui {
+                width: 300px;
+                
+            }
+            .payment-page-1>h1{
+                text-align: start;
+            }
+            .Header-container-1-payment{
+                margin-left: -450px;
+            }
   }
