@@ -1,5 +1,4 @@
 import "./style.css";
-//import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 function Product3() {
     var data=["https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/18/bdca38e1-6073-44e4-95a4-661ccb74a8e01650300879505-Polo-T-Shirts--1-.jpg",
 
