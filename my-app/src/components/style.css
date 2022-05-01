@@ -68,6 +68,10 @@
     height: 350px;
     margin-left: 9px;
 }
+.product-img-3 {
+    height: 350px;
+    margin-left: 9px;
+}
 
 .product-deal-heading {
     color: gray;
@@ -425,6 +429,11 @@ font-size: 40px;
         margin-left: 9px;
         align-items: center;
     }
+    .product-img-3 {
+        height: 350px;
+        margin-left: 9px;
+        align-items: center;
+    }
     .Product-container-2 {
         display: grid;
         grid-template-columns: auto auto auto auto ;
@@ -528,6 +537,12 @@ font-size: 40px;
         margin-left: 19px;
         align-items: center;
     }
+    .product-img-3 {
+        width: 150px;
+        height: 190px;
+         margin-left: 19px;
+         align-items: center;
+     }
     .product-img-2 {
         width: 150px;
         height: 190px;
