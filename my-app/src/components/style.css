@@ -59,6 +59,11 @@
     display: flex;
 }
 
+.Product-container-1-p3 {
+    display: flex;
+}
+
+
 .product-img-1 {
     height: 350px;
     margin-left: 9px;
@@ -408,6 +413,10 @@ font-size: 40px;
         display: grid;
         grid-template-columns: auto auto auto auto ;
     }
+    .Product-container-1-p3 {
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+    }
     .Slider-image{
         display:none;
     }
@@ -500,6 +509,13 @@ font-size: 40px;
         
     }
     .Product-container-1 {
+       
+        display: grid;
+        grid-template-columns: auto auto ;
+        gap:10px;
+       
+    }
+    .Product-container-1-p3 {
        
         display: grid;
         grid-template-columns: auto auto ;

@@ -15,7 +15,7 @@ function Product3() {
       <>
       <h1 className="product-deal-heading">DEAL OF THE DAY
 </h1>
-    <div className="Product-container-1">
+    <div className="Product-container-1-p3">
         
 
 {
