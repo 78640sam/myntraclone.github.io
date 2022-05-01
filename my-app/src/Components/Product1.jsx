@@ -2,12 +2,12 @@ import "./style.css";
 function Product3() {
     var data=["https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/96ae746e-e33d-4f99-9594-0cff65fde0521650542579795-W-_Biba.jpg",
 
- "https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/18/e2b52463-3ec4-4043-a3ee-9b89287a3e5a1650300879520-Sarees--1-.jpg",
- "https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/18/8b1905c6-e142-46d3-8c8c-67e5b521a8cf1650300984767-Luxe-Beauty.jpg",
+ "https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/b1692efc-4538-4e7a-a9d2-227f57e7e15d1650542578739-Anouk_-_Sangria.jpg",
+ "https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/d12be918-c845-43ad-a486-cf6e851696961650542579660-SugarGarnier.jpg",
  "https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/18/14fc06c3-301a-4a27-aa23-87b482eb4c101650300879536-Handbags--1-.jpg",
-"https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/18/be62012c-581d-49a3-90a5-6f68cab0f6761650301062694-Formal-Shoes.jpg",
-"https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/18/d5cd5ffb-6c64-4a63-b2bb-30eef5490e1e1650300879512-Shorts---Skirts.jpg",
-"https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/18/41117fa4-7871-40ed-bed4-b482521d6d5d1650300879527-Activewear.jpg"
+"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/6aec2ae4-d985-44d1-acfa-05ec3a0d19571650542579528-Roadster-_M-H.jpg",
+"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/8054ee00-2795-45d0-b137-6f9b4d71ff451650542578965-HL-_Roadster.jpg",
+"https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/21/636aa7d1-c8fd-4df4-bf57-737a2ae1eb771650542578826-Crocs.jpg"
 ]
 
 
