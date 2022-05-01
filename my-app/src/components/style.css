@@ -70,7 +70,8 @@
 }
 .product-img-3 {
     height: 350px;
-    margin-left: 9px;
+    width: 300px; 
+    margin-left: 15px;
 }
 
 .product-deal-heading {

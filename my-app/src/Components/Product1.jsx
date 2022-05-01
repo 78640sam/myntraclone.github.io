@@ -21,7 +21,7 @@ function Product3() {
          data.map(item=>{
            return(  
            <img
-             className="product-img-1"
+             className="product-img-3"
              src={item}
              alt="" 
            />
