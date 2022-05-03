@@ -6,7 +6,6 @@ import LocalMallSharpIcon from '@mui/icons-material/LocalMallSharp';
 import {  useDispatch } from 'react-redux';
 import { searchItem } from "../Redux/action";
 
-// import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 
 function Header() {
   const dispatch =useDispatch();
