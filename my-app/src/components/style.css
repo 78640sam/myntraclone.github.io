@@ -618,7 +618,7 @@ font-size: 40px;
         display: grid;
         grid-template-columns: 45% 55% 5%;
       gap:190px;
-        /* margin-left: 100px; */
+       
        
     }
     .product-image-addtocart {
