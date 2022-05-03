@@ -28,7 +28,7 @@ function Header() {
         <a href="/products" className="link">  <h3>STUDIO</h3></a>
       </div>
       <div className="Search-header">
-        {/* <SearchSharpIcon/> */}
+       
         <input className="header-input" type="search" placeholder="Search for products and Brand " onChange={changeHandler}/>
       </div>
       <div className="header-icon-1">
